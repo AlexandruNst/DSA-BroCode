@@ -5,6 +5,16 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
+        // Advantages:
+        // 1. Random access of elements in O(1)
+        // 2. Good locality of reference and cache utilisation (because the memory addresses are contiguous)
+        // 3. Easy to insert/delete at end (closer to head, longer it takes, up to O(n))
+
+        // Disadvantages:
+        // 1. Wastes more memory (can have capacity 2 * size and not be used entirely)
+        // 2. Shifting elements (insert, delete) takes O(n)
+        // 3. Expanding/shrinking takes O(n)
+
         ArrayList<String> arrayList = new ArrayList<>(); //Java default
 
         DynamicArray dynamicArray = new DynamicArray();

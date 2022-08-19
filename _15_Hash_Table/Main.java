@@ -15,7 +15,7 @@ public class Main {
         //              key.hashCode() % capacity = index (or bucket)
 
         // bucket     = an indexed storage for 1 or more entries
-        //              in case of collision, we treat each bucket as a linked list
+        //              in case of collision, we treat each bucket as a LinkedList
 
         // collision  = hash function generates the same index for more than one key
         //              less collisions means more efficiency
